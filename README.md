@@ -144,16 +144,3 @@ Lakshmi Kanth
 
 This repository is designed as an educational and portfolio project to showcase analysis, visualization, and predictive modeling using a real-world football dataset.
 
-## Preview section
-
-If you want to add visual screenshots later, this is the ideal place to include them:
-
-```md
-## Analysis snapshots
-
-![Top-rated players by league](path/to/league_chart.png)
-![Attribute correlation heatmap](path/to/correlation_heatmap.png)
-![Player rating distribution by position](path/to/position_distribution.png)
-```
-
-You can replace those with actual screenshots once the charts are exported from the notebook.
