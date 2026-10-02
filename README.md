@@ -1,106 +1,140 @@
 # EDA for EA FC by Python
 
-A Python-based exploratory data analysis (EDA) project for the EA Sports FC player dataset. This repository contains a Jupyter notebook that loads player data, cleans and explores it, visualizes key patterns, and demonstrates a predictive modeling workflow.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10+" />
+  <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white" alt="Jupyter Notebook" />
+  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/Seaborn-Visualization-5C7CFA?logo=seaborn&logoColor=white" alt="Seaborn" />
+  <img src="https://img.shields.io/badge/Scikit--Learn-ML-FF6F00?logo=scikitlearn&logoColor=white" alt="Scikit-learn" />
+</p>
 
-## Project Overview
+<p align="center">
+  <a href="https://github.com/LakshmiKanth11/EDA-FOR-EAFC-BY-PYTHON/blob/main/ANALYSIS_OF_EA_FC.ipynb">
+    <img src="https://img.shields.io/badge/Open%20Notebook-%20Google%20Colab-FF6F61?logo=googlecolab&logoColor=white" alt="Open in Colab" />
+  </a>
+</p>
 
-This project analyzes a large FIFA/EA FC-style dataset containing player-level information such as:
+A portfolio-style exploratory data analysis project focused on the EA Sports FC player dataset. This repository analyzes player attributes, team distribution, league representation, and rating patterns using Python, Pandas, Matplotlib, Seaborn, and Scikit-learn.
 
-- Player name and identity
-- Club, league, and nationality
-- Position and playing style
-- Overall rating and attribute scores
-- Age, gender, and other profile details
+## Overview
 
-The notebook explores the dataset to answer questions like:
+This project was built to explore how player quality, skill attributes, age, club, and league interact across a large football dataset. The notebook applies a full EDA workflow and highlights key patterns that can guide further predictive modeling and deeper sports analytics.
 
-- Which clubs and leagues dominate the dataset?
-- Which player attributes correlate most with overall rating?
-- How do ratings differ by position, nationality, and gender?
-- What patterns emerge from the player distribution across teams and leagues?
+## What this project covers
 
-## Notebook
+- Data upload and preprocessing
+- Dataset overview and quality checks
+- Distribution analysis by league, club, and nationality
+- Attribute correlations with overall rating
+- Position-wise performance comparisons
+- Visual storytelling with charts and summaries
+- Predictive modeling workflow using player features
 
-- `ANALYSIS_OF_EA_FC.ipynb`
+## Dataset summary
 
-This is the main analysis notebook. It includes:
+The notebook explores a dataset with the following characteristics:
 
-- Data upload and loading
-- Initial dataset inspection
-- Feature engineering and derived metrics
-- Exploratory visualizations
-- Summary statistics and insights
-- Predictive modeling steps
-
-## Dataset
-
-The notebook is designed to work with an EA FC player dataset, such as a CSV like:
-
-- `EA FC PLAYERS DATA.csv`
-
-The project currently uses a dataset with:
-
-- 19,789 rows
+- 19,789 players
 - 61 columns
 - 702 clubs
 - 63 leagues
 - 164 nationalities
+- Men and women’s football profiles included
 
-## Tech Stack
+## Notebook
+
+The main analysis notebook is:
+
+- `ANALYSIS_OF_EA_FC.ipynb`
+
+This notebook contains the complete exploratory workflow, including:
+
+1. Loading the EA FC dataset
+2. Initial inspection and schema review
+3. Age and profile calculations
+4. Visual analysis of distributions and trends
+5. Key findings from rating patterns
+6. Feature-based predictive modeling steps
+
+## Key insights captured
+
+This analysis focuses on identifying patterns such as:
+
+- Which clubs and leagues dominate top-performing players
+- The strongest attributes correlated with high overall ratings
+- Differences in player profiles by position and role
+- Trends in national and international representation
+- How physical, technical, and mental attributes influence performance
+
+## Tech stack
 
 - Python
 - Jupyter Notebook
 - Pandas
+- NumPy
 - Matplotlib
 - Seaborn
 - Scikit-learn
 
-## Requirements
-
-Install the dependencies with:
-
-```bash
-pip install pandas matplotlib seaborn scikit-learn jupyter
-```
-
-## How to Run
-
-1. Open the notebook in Jupyter or Google Colab.
-2. Upload the EA FC player CSV file when prompted.
-3. Run the notebook cells sequentially.
-4. Review the exploratory analysis and generated visualizations.
-
-## Example Workflow
-
-```python
-import pandas as pd
-
-# Load dataset
-# df = pd.read_csv('EA FC PLAYERS DATA.csv')
-# df.head()
-```
-
-## Key Findings
-
-The notebook highlights a range of insights from the dataset, including:
-
-- Strong concentration of top-rated players in major leagues
-- Clear differences in ratings by position
-- The effect of key attributes like shooting, pace, passing, and defending on overall performance
-- Trends across clubs, nationalities, and player profiles
-
-## Repository Structure
+## Repository structure
 
 ```text
 EDA-FOR-EAFC-BY-PYTHON/
 ├── ANALYSIS_OF_EA_FC.ipynb
 ├── README.md
-└── (uploaded dataset file, if present)
+├── EA FC PLAYERS DATA.csv   # dataset used in the notebook
+└── other generated outputs, if available
 ```
+
+## Setup
+
+Install the required dependencies:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+```
+
+## Run the notebook
+
+### Option 1: Local Jupyter environment
+
+```bash
+jupyter notebook
+```
+
+Then open `ANALYSIS_OF_EA_FC.ipynb` and run the cells sequentially.
+
+### Option 2: Google Colab
+
+Open the notebook directly in Colab using the badge above or upload the notebook into your Colab environment and run it.
+
+## Example workflow
+
+```python
+import pandas as pd
+
+# Load dataset
+df = pd.read_csv('EA FC PLAYERS DATA.csv')
+print(df.head())
+```
+
+## Portfolio-style highlights
+
+This project demonstrates:
+
+- exploratory data analysis fundamentals
+- business/football analytics thinking
+- data cleaning and preparation skills
+- insight generation from structured datasets
+- application of machine learning concepts in a real-world context
+
+## Project status
+
+Status: Complete exploratory analysis and modeling workflow implemented in the notebook.
 
 ## License
 
-This project does not currently include a license file. If you plan to share or reuse the notebook publicly, consider adding an open-source license.
+This project currently does not include a dedicated license file. If you plan to share or commercialize the project publicly, consider adding an open-source license.
 
 ## Author
 
@@ -108,4 +142,18 @@ Lakshmi Kanth
 
 ## Notes
 
-This project is intended for educational and exploratory analysis purposes. The analysis can be extended with additional machine learning models, dashboards, or a cleaner reproducible pipeline.
+This repository is designed as an educational and portfolio project to showcase analysis, visualization, and predictive modeling using a real-world football dataset.
+
+## Preview section
+
+If you want to add visual screenshots later, this is the ideal place to include them:
+
+```md
+## Analysis snapshots
+
+![Top-rated players by league](path/to/league_chart.png)
+![Attribute correlation heatmap](path/to/correlation_heatmap.png)
+![Player rating distribution by position](path/to/position_distribution.png)
+```
+
+You can replace those with actual screenshots once the charts are exported from the notebook.
